@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
     end
     
     def show
+        
     end
     
     def destroy
@@ -25,7 +26,8 @@ class ArticlesController < ApplicationController
     
     def create
       @article = Article.new(article_params)
-      if @article.save
+      # @article.user = User.first
+            if @article.save
           flash[:success] = "Article was successfully created"
             #do something
             redirect_to article_path(@article)
@@ -42,7 +44,6 @@ class ArticlesController < ApplicationController
             render "edit"
         end
     end
-    
     
     def set_article
         @article = Article.find(params[:id])
