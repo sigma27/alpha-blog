@@ -45,6 +45,21 @@ $navbar-default-bg: black;
     border-top: 1px solid #eaeaea;
     padding-top: 5px;
 }
+
+.description {
+    marging-top: 0
+}
+
+.article-title {
+    font-weight:bold;
+    font-size: 1.5em;
+}
+
+.article_description {
+    border-top: 1px solid #eaeaea;
+    padding-top: 15px;
+    padding-bottomn: 15px
+}
 .footer {
     margin-top: 45px;
     padding-top: 5px;
